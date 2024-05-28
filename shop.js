@@ -6,11 +6,13 @@ categories.forEach(category => {
 });
 
 const holidays = {
+    // Für testen start und Enddatum ändern um Rabatt oder kein Rabatt zu haben
+    //Preisrange 1: 1-10$, Preisrange 2: 10-50$, Preisrange 3: 50-100$, Preisrange 4: 100-1000$
     Test: {
         start: '05-24',
         end: '06-26',
         discounts: {
-            Haushalt: { 1: 50, 2: 25, 3: 15, 4: 10 },
+            Haushalt: { 1: 50, 2: 25, 3: 15, 4: 10 }, // Preisrange 1: 50% Rabattt, Preisrange 2: 25% Rabattt, Preisrange 3: 15% Rabattt, Preisrange 4: 10% Rabattt
             Spielzeug: { 1: 50, 2: 25, 3: 15, 4: 10 },
             Technik: { 1: 50, 2: 25, 3: 15, 4: 10 },
             Wohnen: { 1: 50, 2: 25, 3: 15, 4: 10 }
