@@ -1,18 +1,38 @@
 const categories = ['Haushalt', 'Spielzeug', 'Technik', 'Wohnen'];
-const products = {};
-
-categories.forEach(category => {
-    products[category] = generateProducts(category);
-});
+const products = {
+    Haushalt: [
+        { name: 'Haushalt-Produkt-1: Mixer', price: 5.99, range: 1 },
+        { name: 'Haushalt-Produkt-2: Grill', price: 19.99, range: 2 },
+        { name: 'Haushalt-Produkt-3: Waschmaschine', price: 69.99, range: 3 },
+        { name: 'Haushalt-Produkt-4: Staubsauger', price: 399.99, range: 4 },
+    ],
+    Spielzeug: [
+        { name: 'Spielzeug-Produkt-1: Legoset', price: 7.49, range: 1 },
+        { name: 'Spielzeug-Produkt-2: Spielzeugauto', price: 29.99, range: 2 },
+        { name: 'Spielzeug-Produkt-3: Fußball', price: 89.99, range: 3 },
+        { name: 'Spielzeug-Produkt-4: Rutsche', price: 599.99, range: 4 },
+    ],
+    Technik: [
+        { name: 'Technik-Produkt-1: SD-karte', price: 9.99, range: 1 },
+        { name: 'Technik-Produkt-2: CPU-Lüfter ', price: 39.99, range: 2 },
+        { name: 'Technik-Produkt-3: Tatastur(Mechanisch)', price: 149.99, range: 3 },
+        { name: 'Technik-Produkt-4: Smartphone', price: 999.99, range: 4 },
+    ],
+    Wohnen: [
+        { name: 'Wohnen-Produkt-1: Kissen', price: 11.99, range: 1 },
+        { name: 'Wohnen-Produkt-2: Lampe', price: 49.99, range: 2 },
+        { name: 'Wohnen-Produkt-3: Hocker', price: 199.99, range: 3 },
+        { name: 'Wohnen-Produkt-4: Sofa', price: 899.99, range: 4 },
+    ]
+};
 
 const holidays = {
-    // Für testen start und Enddatum ändern um Rabatt oder kein Rabatt zu haben
-    //Preisrange 1: 1-10$, Preisrange 2: 10-50$, Preisrange 3: 50-100$, Preisrange 4: 100-1000$
+    // Für Testzwecke Datum ändern
     Test: {
         start: '05-24',
         end: '06-26',
         discounts: {
-            Haushalt: { 1: 50, 2: 25, 3: 15, 4: 10 }, // Preisrange 1: 50% Rabattt, Preisrange 2: 25% Rabattt, Preisrange 3: 15% Rabattt, Preisrange 4: 10% Rabattt
+            Haushalt: { 1: 50, 2: 25, 3: 15, 4: 10 },
             Spielzeug: { 1: 50, 2: 25, 3: 15, 4: 10 },
             Technik: { 1: 50, 2: 25, 3: 15, 4: 10 },
             Wohnen: { 1: 50, 2: 25, 3: 15, 4: 10 }
@@ -34,7 +54,7 @@ const holidays = {
         discounts: { Technik: { 1: 50, 2: 25, 3: 15, 4: 10 } }
     },
     Thanksgiving: {
-        start: '11-23',
+        start: '11-23',end: '11-23',
         end: '11-23',
         discounts: { Haushalt: { 1: 50, 2: 25, 3: 15, 4: 10 } }
     },
@@ -48,18 +68,12 @@ const holidays = {
 let cart = [];
 
 function generateProducts(category) {
-    return [
-        { name: `${category}-Produkt-1`, price: randomPrice(1, 10), range: 1 },
-        { name: `${category}-Produkt-2`, price: randomPrice(10, 50), range: 2 },
-        { name: `${category}-Produkt-3`, price: randomPrice(50, 100), range: 3 },
-        { name: `${category}-Produkt-4`, price: randomPrice(100, 1000), range: 4 },
-    ];
+    return products[category];
 }
 
 function randomPrice(min, max) {
     return (Math.random() * (max - min) + min).toFixed(2);
 }
-
 function showCategory(category) {
     const productList = document.getElementById('product-list');
     productList.innerHTML = '';
@@ -195,4 +209,5 @@ function updateHolidayCountdown() {
 // Initialize the page with the first category
 showCategory('Haushalt');
 updateHolidayCountdown();
-setInterval(updateHolidayCountdown, 1000); // Update every second
+setInterval(updateHolidayCountdown, 1000);
+
