@@ -1,0 +1,3 @@
+# Was kann geändert werden, was kann noch hinzugefügt werden ? 
++ Da es wenig Sinn ergibt, immer alle Produkte gleich zu rabattieren, wäre es nützlich, wenn die AI Zugriff auf eine Verkaufsdatenbank zu jedem Produkt hat. Gut verkaufte Produkte sollten anders heruntergesetzt werden als schlecht verkaufte Produkte. 
++ Wenn Produkte nicht gut verkauft werden, generalüberholt sind oder über längeren Zeitraum im Lager sind, beispielsweise 4 Jahre, kann für diese Produkte ein Schlussverkauf gestartet werden, wobei der Prozentsatz sehr hoch sein kann. 
