@@ -1,6 +1,6 @@
 # Die "Ai" die die Angebote ertellt 
-_Merke: Die Ai ist sehr simpel und nur für kleine Datenmengen (test eshop gedacht), skalierbarkeit wird nachgearbeiet._
-[![Despair](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc_oXv8Xnem4y3E9_m-fx9qINax6zaA-M8uAp6nyRWa4ByQtdODwAcIrQHxpne0ehcz0I&usqp=CAU)
+_Merke: Die Ai ist sehr simpel und nur für kleine Datenmengen (test eshop gedacht), Skalierbarkeit wird nachgearbeiet._
+![Despair](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc_oXv8Xnem4y3E9_m-fx9qINax6zaA-M8uAp6nyRWa4ByQtdODwAcIrQHxpne0ehcz0I&usqp=CAU)
 ```
 const holidays = {
     Weihnachten: {
@@ -31,7 +31,7 @@ const holidays = {
 };
 ```
 # "Datenbank" der Feiertage
-_Merke: Sollte der Shop und die Feiertage erweitert werden darauf, dass die AI ermittelt in welchem Land man sich befindent und welche Feiertage es dort gibt und zu jedem dieser individuellen Feiertag ein Angebot erstellt, wird es notwenidg, eine richtige Datenbank zu nutzen und nicht die Feiertage in javascript zu coden._
+_Merke: Sollte der Shop und die Feiertage erweitert werden darauf, dass die AI ermittelt in welchem Land man sich befindet und welche Feiertage es dort gibt und zu jedem dieser individuellen Feiertage ein Angebot erstellt, wird es notwendig, eine richtige Datenbank zu nutzen und nicht die Feiertage in Javascript zu coden_
 
 ## Was passiert hier ? 
 In diesem JavaScript-Ausschnitt wird ein Objekt namens "holidays" erstellt, das Informationen über verschiedene Feiertage enthält. Jeder Feiertag wird als Schlüssel im Objekt dargestellt, und die Werte sind jeweils Objekte, die Informationen über den Start- und Enddatum des Feiertags sowie Rabatte für verschiedene Produktkategorien enthalten.
