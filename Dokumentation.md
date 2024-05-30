@@ -5,9 +5,19 @@
     * Kaufverhalten des Käufers z.b soll analysiert werden wie lange er auf der Seite eines Produktes war, oder wie häufig er auf ein Produkt geklickt hat.
     * Vorherigen Käufen und vorherigen Einkaufswerten 
     * Auswertung von Cookies und Standort
-
+* Rabatt als Spektrum z.b gleiches Produkt wir bei allen Kunden unterschiedlich rabattiert. 
 # Was benötigen wir um das zu erreichen? 
 _Merke: der folgende Code dient nur zur Veranschaulichung_
+
++ ## Indiviudelle Angebotserstellung
+* Bei Erstellung des Accounts wird der Standort und Geschlecht zum Nutzerprofil hinzugefügt.
+* Zur Auswertung von Cookies können diverse Tools genutzt werden : 
+    * Cookiebot
+    * OneTrust
+    * Complianz 
+* Dauer der Zeit auf der Produktseite kann auch durch Cookies getrackt werden.
+* Vorherige Käufe werden auf dem Nutzerprofil in einer Datenbank hinterlegt.
+
 + ## Datenbank 
 ```
 CREATE TABLE sales (
