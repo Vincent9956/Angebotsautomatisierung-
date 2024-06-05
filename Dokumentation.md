@@ -6,6 +6,7 @@
     * Vorherigen Käufen und vorherigen Einkaufswerten 
     * Auswertung von Cookies und Standort
 * Rabatt als Spektrum z.b gleiches Produkt wir bei allen Kunden unterschiedlich rabattiert. 
+    * Beispiel Amazon : Nur für dich 
 # Was benötigen wir um das zu erreichen? 
 _Merke: der folgende Code dient nur zur Veranschaulichung_
 
@@ -15,6 +16,7 @@ _Merke: der folgende Code dient nur zur Veranschaulichung_
     * Cookiebot
     * OneTrust
     * Complianz 
+    * Pixel
 * Dauer der Zeit auf der Produktseite kann auch durch Cookies getrackt werden.
 * Vorherige Käufe werden auf dem Nutzerprofil in einer Datenbank hinterlegt.
 
